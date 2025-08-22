@@ -15,7 +15,12 @@ const quicksand = Quicksand({
 export default function Home() {
   return (
     <>
-      <h1 className={`quicksand.className font-bold text-center`}>WELCOME TO NORTHLIGHT CREATIVE</h1>
+      <div className="flex justify-center items-center md:items-start h-screen flex-col gap-4 p-8">
+        <h2 className={`quicksand.className font-medium text-xl md:text-3xl`}>
+          Welcome To
+        </h2>
+        <h1 className={`quicksand.className text-3xl md:text-6xl`}>Northlight Creative</h1>
+      </div>
     </>
   );
 }
