@@ -10,7 +10,7 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
-          MyLogo
+          NC
         </Link>
 
         <NavMenu />
