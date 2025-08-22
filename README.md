@@ -29,13 +29,13 @@ At **Northlight Creative (NC)**, we combine design thinking with modern engineer
 
 ## 🖥️ Live Projects
 Hosted on **Vercel** for speed & reliability.  
-👉 [Visit Our Latest Build](#) *(replace with your live link)*  
+👉 [Visit Our Latest Build](https://coffeely.vercel.app)  
 
 ---
 
 ## 📩 Let’s Work Together
 Looking to build your next big idea?  
-Reach out: **[your email here]**  
+Reach out: **(chikaimauwakwe@gmail.com)**  
 
 Or, if you’re a dev/designer who vibes with our mission, let’s connect — collaboration keeps us sharp.  
 
