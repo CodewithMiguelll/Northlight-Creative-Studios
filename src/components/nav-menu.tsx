@@ -11,7 +11,7 @@ import {
 
 const Navigation = () => {
   return (
-    <div className="flex justify-center my-6">
+    <div className="flex justify-center my-6 text-white">
       <NavigationMenu className="mx-4 flex">
         <NavigationMenuList>
           <NavigationMenuItem>
