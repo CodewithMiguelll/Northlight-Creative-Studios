@@ -1,4 +1,5 @@
 import { Pacifico, Quicksand } from "next/font/google";
+import { FlipWords } from "@/components/ui/flip-words";
 
 const pacifico = Pacifico({
   variable: "--font-pacifico",
@@ -12,14 +13,21 @@ const quicksand = Quicksand({
   weight: "400",
 });
 
+ const words = ["UI", "Product", "Website", "Vision"];
+ 
+
 export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center md:items-start h-screen flex-col gap-4 p-8">
         <h2 className={`quicksand.className font-medium text-xl md:text-3xl`}>
-          Welcome To
+          Let's build your next
+          <FlipWords words={words} />
+          at
         </h2>
-        <h1 className={`quicksand.className text-3xl md:text-6xl`}>Northlight Creative</h1>
+        <h1 className={`quicksand.className text-3xl md:text-6xl`}>
+          Northlight Creative
+        </h1>
       </div>
     </>
   );
