@@ -16,8 +16,20 @@ export default function Header() {
         <NavMenu />
 
         <div className="flex items-center gap-4">
-          <Button color="#ffffff">Sign in</Button>
-          <Button className="bg-[#9ca3af]">Get Started</Button>
+          <Link href={"/contact"}>
+            <Button
+              className="transition md:hover:cursor-pointer md:hover:bg-white md:hover:text-black "
+              color="#ffffff"
+            >
+              Contact Us
+            </Button>
+          </Link>
+
+          <Link href={"https://cal.com/chikaima-uwakwe-004"} target="_blank">
+            <Button className="bg-[#9ca3af] transition md:hover:cursor-pointer">
+              Book A Call
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
