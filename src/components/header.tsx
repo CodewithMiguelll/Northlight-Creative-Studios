@@ -1,16 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import { Pacifico } from "next/font/google";
 import { Button } from "@/components/ui/button";
 import NavMenu from "@/components/nav-menu";
+
+const pacifico = Pacifico({ 
+  variable: "--font-pacifico",
+  subsets: ["latin"], 
+  weight: "400" });
 
 export default function Header() {
   return (
     <header className="w-full shadow-md">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-white">
-          NC
+        <Link href="/" className={`${pacifico.className} text-xl font-bold text-white`}>
+          NorthLight Creative
         </Link>
 
         <NavMenu />
