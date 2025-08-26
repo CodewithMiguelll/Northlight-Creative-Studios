@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link href={"/contact"}>
             <Button
-              className="transition md:hover:cursor-pointer md:hover:bg-white md:hover:text-black "
+              className="transition-all md:hover:cursor-pointer hover:translate-y-1 bg-[#fffaf5] md:hover:bg-[#ffffff] hover:shadow-2xl hover:shadow-white md:hover:text-[#121212] text-[#121212] "
               color="#ffffff"
             >
               Contact Us
@@ -32,7 +32,7 @@ export default function Header() {
           </Link>
 
           <Link href={"https://cal.com/chikaima-uwakwe-004"} target="_blank">
-            <Button className="bg-[#9ca3af] transition md:hover:cursor-pointer">
+            <Button className="bg-[#7b8650af]  transition md:hover:cursor-pointer hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212]">
               Book A Call
             </Button>
           </Link>
