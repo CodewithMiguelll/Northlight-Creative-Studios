@@ -1,7 +1,10 @@
 "use client"
-import { Quicksand, Prompt, Podkova } from "next/font/google";
+import { Quicksand, Prompt, Podkova, Pacifico } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 // Font for headings.
 const quicksand = Quicksand({
@@ -12,6 +15,25 @@ const quicksand = Quicksand({
 
 const quicksandBold = Quicksand({
   variable: "--font-quicksand-bold",
+  subsets: ["latin"],
+  weight: "700",
+});
+
+const quicksandSemiBold = Quicksand({
+  variable: "--font-quicksand-bold",
+  subsets: ["latin"],
+  weight: "500",
+});
+
+//Font for subheadings
+const podkova = Podkova({
+  variable: "--font-podkova",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const podkovaBold = Podkova({
+  variable: "--font-podkova",
   subsets: ["latin"],
   weight: "700",
 });
@@ -29,18 +51,6 @@ const promptBold = Prompt({
   weight: "700",
 });
 
-const podkova = Podkova({
-  variable: "--font-podkova",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const podkovaBold = Podkova({
-  variable: "--font-podkova",
-  subsets: ["latin"],
-  weight: "700",
-});
-
 const words = ["UI", "Product", "Website", "Vision"];
 
 export default function Home() {
@@ -49,13 +59,16 @@ export default function Home() {
       {/* HERO SECTION */}
       <section>
         <div className="flex flex-row justify-around items-center p-4">
-          <div className="flex justify-center items-center md:items-start h-screen flex-col gap-4 p-8 text-white">
+          <div className="flex justify-center items-center md:items-start h-screen flex-col gap-6 p-6 text-[#121212]">
             <h2
-              className={`${quicksand.className} font-medium text-xl md:text-3xl`}
+              className={`${quicksandSemiBold.className} font-medium text-xl md:text-3xl`}
             >
               Let's build your next
               {/*To change the color, you can do so easily by adding TW classes directly to the FlipWords component */}
-              <FlipWords className="text-white font-bold" words={words} />
+              <FlipWords
+                className={`${podkovaBold.className} bg-[#f9f9f9] rounded text-[#121212] p-1 m-2.5 font-bold`}
+                words={words}
+              />
               at
             </h2>
             <h1 className={`${quicksandBold.className} text-3xl md:text-6xl`}>
@@ -76,10 +89,8 @@ export default function Home() {
       {/* ABOUT SECTION */}
       <section>
         <div className="flex flex-col md:flex-row justify-around items-center p-4">
-          {/* <div className="flex justify-center items-center h-full md:w-1/2 p-8">
-      
-          </div> */}
-          <div className="flex justify-center items-center h-full md:w-1/2 p-8 text-white">
+          <div className=" md:flex order-2 md:order-1 justify-center items-center h-full w md:w-1/2 p-8"></div>{" "}
+          <div className="flex order-1 md:order-2 justify-center items-center h-full md:w-1/2 p-8 text-[#121212]">
             <div className="max-w-lg">
               <h2
                 className={`${podkovaBold.className} text-2xl md:text-4xl mb-4`}
@@ -96,9 +107,17 @@ export default function Home() {
               <p className={`${prompt.className} text-md md:text-lg`}>
                 Whether you're a startup looking to establish your online
                 presence or an established business aiming to revamp your brand,
-                we have the skills and experience to help you achieve your goals.
-                Let's work together to create something extraordinary.
+                we have the skills and experience to help you achieve your
+                goals. Let's work together to create something extraordinary.
               </p>
+              <span className="flex items-center gap-2 mt-5">
+                <Link href={"/about"}>
+                  <Button className="bg-[#7b8650af] flex items-center gap-2 p-1 text-[#121212] hover:bg-[#7b8650]">
+                    Learn More
+                    <ArrowRight className="w-4 h-4 ml-1" />
+                  </Button>
+                </Link>
+              </span>
             </div>
           </div>
         </div>
