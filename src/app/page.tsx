@@ -5,6 +5,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 // Font for headings.
 const quicksand = Quicksand({
@@ -76,11 +77,16 @@ export default function Home() {
             </h1>
           </div>
           <div className="hidden md:flex justify-center items-center h-screen">
-            <DotLottieReact
-              src="https://lottie.host/f20eba1e-5aa2-464a-8c78-34c2d2d245ca/VBIdAfUkuI.lottie"
-              autoplay
-              loop
-              style={{ width: 400, height: 400 }}
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              src="/freepik__upload__71496.png"
+              alt="Freelancer working on a project"
+              className="rounded-lg shadow-md"
+              width={500}
+              height={500}
             />
           </div>
         </div>
@@ -89,7 +95,19 @@ export default function Home() {
       {/* ABOUT SECTION */}
       <section>
         <div className="flex flex-col md:flex-row justify-around items-center p-4">
-          <div className=" md:flex order-2 md:order-1 justify-center items-center h-full w md:w-1/2 p-8"></div>{" "}
+          <div className=" md:flex order-2 md:order-1 justify-center items-center h-full w md:w-1/2 p-8">
+            <motion.img
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              src="/3644996.jpg"
+              alt="Freelancer working on a project."
+              className="rounded-lg shadow-md "
+              width={500}
+              height={500}
+            />
+          </div>
           <div className="flex order-1 md:order-2 justify-center items-center h-full md:w-1/2 p-8 text-[#121212]">
             <div className="max-w-lg">
               <h2
