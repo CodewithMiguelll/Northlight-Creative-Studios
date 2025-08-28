@@ -1,4 +1,4 @@
-# 🌌 Northlight Creative  
+# 🌌 Northlight Creative Studios
 
 **Web & Product Development Agency**  
 Building sleek, scalable, and user-focused digital experiences.  
@@ -8,7 +8,7 @@ Building sleek, scalable, and user-focused digital experiences.
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)  
 ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)  
 
-At **Northlight Creative (NC)**, we combine design thinking with modern engineering to craft products that don’t just look good — they *work flawlessly*. Whether it’s a brand website, a full-stack app, or a custom product, we bring clarity and creativity to the table.  
+At **Northlight Creative Studios (NC)**, we combine design thinking with modern engineering to craft products that don’t just look good — they *work flawlessly*. Whether it’s a brand website, a full-stack app, or a custom product, we bring clarity and creativity to the table.  
 
 ---
 
