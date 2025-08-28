@@ -7,9 +7,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico", 
     apple: "/apple-touch-icon.png", 
   },
-  title: "Northlight Creative",
+  title: "Northlight Creative Studios",
   description:
-    "Official website for Northlight Creative, a multidisciplinary freelancing agency focused on web, design, and content.",
+    "Official website for Northlight Creative Studios, a multidisciplinary freelancing agency focused on web, design, and content.",
 };
 
         
