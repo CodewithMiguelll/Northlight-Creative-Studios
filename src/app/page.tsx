@@ -1,11 +1,11 @@
 "use client"
 import { Quicksand, Prompt, Podkova, Pacifico } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import ListCard from "@/components/card";
 
 // Font for headings.
 const quicksand = Quicksand({
@@ -138,6 +138,53 @@ export default function Home() {
               </span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FEATURES SECTION*/}
+      <section className="py-12">
+        <h2
+          className={`${podkovaBold.className} text-2xl md:text-4xl mb-8 text-[#121212] text-center`}
+        >
+          What We Do
+        </h2>
+
+        <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
+          {[
+            {
+              title: "Web Development",
+              details: [
+                "Responsive website design",
+                "Frontend engineering (React, Next.js)",
+                "Backend integration",
+                "Performance optimization",
+              ],
+            },
+            {
+              title: "Graphics Design",
+              details: [
+                "Logo & brand identity",
+                "Social media graphics",
+                "Custom illustrations",
+                "Marketing assets",
+              ],
+            },
+            {
+              title: "Product Design",
+              details: [
+                "UI/UX design",
+                "Wireframes & prototypes",
+                "Interaction design",
+                "Design systems",
+              ],
+            },
+          ].map((feature, index) => (
+            <ListCard
+              key={index}
+              title={feature.title}
+              details={feature.details}
+            />
+          ))}
         </div>
       </section>
     </>
