@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Quicksand, Prompt, Podkova, Pacifico } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Button } from "@/components/ui/button";
@@ -58,9 +58,9 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section>
-        <div className="flex flex-row justify-around items-center p-4">
-          <div className="flex justify-center items-center md:items-start h-screen flex-col gap-6 p-6 text-[#121212]">
+      <section className="py-40">
+        <div className="flex flex-col md:flex-row justify-around items-center p-4">
+          <div className="flex justify-center items-center md:items-start flex-col gap-6 p-6 text-[#121212]">
             <h2
               className={`${quicksandSemiBold.className} font-medium text-xl md:text-3xl`}
             >
@@ -73,10 +73,10 @@ export default function Home() {
               at
             </h2>
             <h1 className={`${quicksandBold.className} text-3xl md:text-6xl`}>
-              Northlight Creative
+              Northlight Creative Studios
             </h1>
           </div>
-          <div className="hidden md:flex justify-center items-center h-screen">
+          <div className="md:flex justify-center items-center">
             <motion.img
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -93,9 +93,9 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section>
-        <div className="flex flex-col md:flex-row justify-around items-center p-4">
-          <div className=" md:flex order-2 md:order-1 justify-center items-center h-full w md:w-1/2 p-8">
+      <section className="py-20">
+        <div className="flex flex-col md:flex-row justify-around items-center gap-8 p-4">
+          <div className=" md:flex order-2 md:order-1 justify-center items-center md:w-1/2 p-8">
             <motion.img
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -108,7 +108,7 @@ export default function Home() {
               height={500}
             />
           </div>
-          <div className="flex order-1 md:order-2 justify-center items-center h-full md:w-1/2 p-8 text-[#121212]">
+          <div className="flex order-1 md:order-2 justify-center items-center md:w-1/2 p-8 text-[#121212]">
             <div className="max-w-lg">
               <h2
                 className={`${podkovaBold.className} text-2xl md:text-4xl mb-4`}
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES SECTION*/}
-      <section className="py-12">
+      <section className="py-20">
         <h2
           className={`${podkovaBold.className} text-2xl md:text-4xl mb-8 text-[#121212] text-center`}
         >
