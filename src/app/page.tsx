@@ -185,7 +185,7 @@ export default function Home() {
         <h2
           className={`${podkovaBold.className} text-2xl md:text-4xl mb-8 text-[#121212] text-center`}
         >
-          What We Do
+          Why Choose Northlight Creative Studios?
         </h2>
 
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
