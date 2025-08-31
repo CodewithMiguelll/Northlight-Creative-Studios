@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
+import {Footer} from "@/components/footer";
 
 export const metadata: Metadata = {
   icons: {
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
