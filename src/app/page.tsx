@@ -95,7 +95,7 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <>
+    <div className="px-3.5">
       {/* HERO SECTION */}
       <section className="py-40">
         <div className="flex flex-col md:flex-row justify-around items-center p-4">
@@ -234,14 +234,55 @@ export default function Home() {
         >
           What Our Clients Say
         </h2>
-        <blockquote className="max-w-3xl mx-auto text-center italic text-lg text-[#121212] p-1">
+        <blockquote className="max-w-3xl mx-auto text-center italic text-lg text-[#121212] p-1 shadow-md mb-16">
           <p>
-            "At Northlight Creative Studios, we pride ourselves with delivering exceptional results for our clients. We believe in going the extra mile, daring to be different and pushing the boundaries of creativity. But of course, don't take my word for it."
+            "At Northlight Creative Studios, we pride ourselves with delivering
+            exceptional results for our clients. We believe in going the extra
+            mile, daring to be different and pushing the boundaries of
+            creativity. But of course, don't take my word for it."
           </p>
-          <cite className="text-sm text-[#121212]">Miguel — Creative Director</cite>
+          <cite className="text-sm text-[#121212]">
+            Chikaima Miguel Uwakwe — Creative Director
+          </cite>
         </blockquote>
         <AnimatedTestimonials testimonials={testimonials} />
       </section>
-    </>
+
+      {/* CONTACT SECTION */}
+      <section className="py-20 px-6">
+        <h2
+          className={`${podkovaBold.className} text-2xl md:text-4xl mb-6 text-[#121212] text-center`}
+        >
+          Don't Stay Wondering! Get In Touch
+        </h2>
+
+        <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 bg-[#fffaf5] p-6 rounded-lg shadow-md">
+          <p className="text-lg text-[#121212] text-center mb-10">
+            Have a project in mind? We'd love to hear from you!
+          </p>
+
+          {/* Email and Contact Page Button row */}
+          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 mt-6">
+            {/* Quick Email Button */}
+            <a
+              href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NCS team, I’d like to get in touch about..."
+              className="inline-block"
+            >
+              <button className="bg-[#7b8650af] hover:bg-[#7b8650] transition-all text-[#fffaf5] px-6 py-3 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-neutral-400">
+                Say Hello 👋
+              </button>
+            </a>
+
+            {/* Full Contact Page Button */}
+            <Link
+              href="/contact"
+              className="transition-all bg-[#121212] hover:bg-[#e9dac1] hover:text-[#121212] text-[#fffaf5] px-6 py-3 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            >
+              Go to Contact Page
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
