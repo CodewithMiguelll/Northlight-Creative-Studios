@@ -99,7 +99,7 @@ const AboutPage = () => {
                 visionary who blurred the lines between creativity and
                 engineering. His ability to see connections where others saw
                 divisions reminds me that design and development aren’t separate
-                worlds, but partners in innovation. At NCS, I draw from that
+                worlds, but partners in innovation. At The Studio, I draw from that
                 same spirit: to craft solutions that are both imaginative and
                 precise, functional yet unforgettable.
               </CardItem>
