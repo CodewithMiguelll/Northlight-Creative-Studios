@@ -56,6 +56,19 @@ const AboutPage = () => {
               experimenting with contrasts to bring the same kind of visual
               intensity into my work.
             </p>
+            <div className="mt-10 text-left">
+              <a
+                href="/chikaima-miguel-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Resume"
+                //download="chikaima-miguel-resume.pdf"
+              >
+                <button className="bg-[#7b8650af] hover:bg-[#7b8650] text-white px-6 py-3 rounded-xl shadow-md">
+                  View Resume
+                </button>
+              </a>
+            </div>
           </div>
 
           {/* Image Column */}
