@@ -112,9 +112,9 @@ const AboutPage = () => {
                 visionary who blurred the lines between creativity and
                 engineering. His ability to see connections where others saw
                 divisions reminds me that design and development aren’t separate
-                worlds, but partners in innovation. At The Studio, I draw from that
-                same spirit: to craft solutions that are both imaginative and
-                precise, functional yet unforgettable.
+                worlds, but partners in innovation. At The Studio, I draw from
+                that same spirit: to craft solutions that are both imaginative
+                and precise, functional yet unforgettable.
               </CardItem>
             </CardBody>
           </CardContainer>
@@ -300,21 +300,6 @@ const AboutPage = () => {
               <li>Problem-Solving & Creative Concepting</li>
             </ul>
           </div>
-        </div>
-
-        {/* Credentials Button */}
-        <div className="mt-10 text-center">
-          <a
-            href="/chikaima-miguel-resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View Resume"
-            //download="chikaima-miguel-resume.pdf"
-          >
-            <button className="bg-[#7b8650af] hover:bg-[#7b8650] text-white px-6 py-3 rounded-xl shadow-md">
-              View Resume
-            </button>
-          </a>
         </div>
       </section>
     </>
