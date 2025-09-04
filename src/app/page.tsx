@@ -155,7 +155,7 @@ export default function Home() {
                 Who We Are
               </h2>
               <p className={`${prompt.className} text-md md:text-lg mb-4`}>
-                At Northlight Creative, we are a multidisciplinary freelancing
+                At The Studio, we are a multidisciplinary freelancing
                 agency dedicated to bringing your ideas to life. Our team of
                 experts specializes in web development, design, and content
                 creation, ensuring that every project we undertake is executed
@@ -265,7 +265,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 mt-6">
             {/* Quick Email Button */}
             <a
-              href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NCS team, I’d like to get in touch about..."
+              href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
               className="inline-block"
             >
               <button className="bg-[#7b8650af] hover:bg-[#7b8650] transition-all text-[#fffaf5] px-6 py-3 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-neutral-400">
