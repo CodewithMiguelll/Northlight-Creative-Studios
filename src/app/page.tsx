@@ -2,7 +2,7 @@
 import { Quicksand, Prompt, Podkova, Pacifico } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import ListCard from "@/components/card";
@@ -58,31 +58,31 @@ const words = ["UI", "Product", "Website", "Vision"];
 const testimonials = [
   {
     quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "During his six-month collaboration with our AI agency, Miguel consistently delivered high-quality graphics for our Instagram campaigns, colleague birthday posts, and onboarding banners. His designs were always on-brand, creative, and timely. We appreciated his reliability and fresh eye for detail.",
+    name: "Enwono Edo",
+    designation: "Chief Executive Officer at African AI Network",
+    src: "/IMG-20250131-WA0000.jpg",
   },
   {
     quote:
-      "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-    name: "Michael Rodriguez",
-    designation: "CTO at InnovateSphere",
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He's a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he's a joy to work with, always positive and communicative.",
+    name: "Aaliyah Junaid",
+    designation: "Fullstack /Blockchain Developer at Evento",
+    src: "/Aaliyah-Junaid-CTO.jpg",
   },
   {
     quote:
-      "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-    name: "Emily Watson",
-    designation: "Operations Director at CloudScale",
-    src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "I’ve worked with Miguel on countless design projects, and he never disappoints. Most recently, he created the poster, pamphlet, invitation, and VIP access card for a family event, and the results were stunning. His eye for detail and creativity make him an invaluable designer to work with.",
+    name: "Chika Uwakwe",
+    designation: "Sole Proprietor at Irresistible Stores",
+    src: "/IMG_0379.jpeg",
   },
   {
     quote:
       "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-    name: "James Kim",
-    designation: "Engineering Lead at DataPro",
-    src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Ihionkhan Shalom",
+    designation: "Product/Project Manager at Mintyn",
+    src: "/shalom-pm-cropped.jpeg",
   },
   {
     quote:
@@ -95,7 +95,7 @@ const testimonials = [
 
 export default function Home() {
   return (
-    <div className="px-3.5">
+    <div className="px-2.5">
       {/* HERO SECTION */}
       <section className="py-40">
         <div className="flex flex-col md:flex-row justify-around items-center p-4">
@@ -114,6 +114,21 @@ export default function Home() {
             <h1 className={`${quicksandBold.className} text-3xl md:text-6xl`}>
               Northlight Creative Studios
             </h1>
+            <span className="flex items-center gap-4 mt-6">
+              <Link href={"/projects"}>
+                <Button className="transition-all hover:translate-x-1 bg-[#fffaf5] hover:bg-[#ffffff] text-[#121212] p-6">
+                  View The Gallery
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Button>
+              </Link>
+
+              <Link href={"/contact"}>
+                <Button className="transition-all hover:translate-x-2 bg-[#7b8650af] hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212] p-6">
+                  <Phone className="w-4 h-4 ml-1" />
+                  Get In Touch
+                </Button>
+              </Link>
+            </span>
           </div>
           <div className="md:flex justify-center items-center">
             <motion.img
@@ -155,11 +170,11 @@ export default function Home() {
                 Who We Are
               </h2>
               <p className={`${prompt.className} text-md md:text-lg mb-4`}>
-                At The Studio, we are a multidisciplinary freelancing
-                agency dedicated to bringing your ideas to life. Our team of
-                experts specializes in web development, design, and content
-                creation, ensuring that every project we undertake is executed
-                with precision and creativity.
+                At The Studio, we are a multidisciplinary freelancing agency
+                dedicated to bringing your ideas to life. Our team of experts
+                specializes in web development, design, and content creation,
+                ensuring that every project we undertake is executed with
+                precision and creativity.
               </p>
               <p className={`${prompt.className} text-md md:text-lg`}>
                 Whether you're a startup looking to establish your online
@@ -188,7 +203,7 @@ export default function Home() {
           Why Choose Northlight Creative Studios?
         </h2>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
+        <div className="grid  gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
           {[
             {
               title: "Web Development",
