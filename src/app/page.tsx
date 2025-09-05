@@ -79,7 +79,7 @@ const testimonials = [
   },
   {
     quote:
-      "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      "I had the pleasure of working with Miguel at African AI Network, and I can confidently say he is an exceptional graphic designer. He is hardworking, highly creative, and consistently delivers high-quality designs that perfectly capture the message and vision of every project. His professionalism, attention to detail, and ability to meet deadlines make him a valuable asset to any team. I strongly recommend him to any employer or client looking for top-notch design work.",
     name: "Ihionkhan Shalom",
     designation: "Product/Project Manager at Mintyn",
     src: "/shalom-pm-cropped.jpeg",
