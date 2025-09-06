@@ -90,6 +90,11 @@ const Projects = () => {
         Welcome To The Gallery!
       </h1>
 
+      <p className="text-lg text-gray-800 max-w-2xl mx-auto mb-8 text-center">
+        A showcase of ideas turned into visuals—crafted with purpose, polished
+        with style.
+      </p>
+
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
@@ -109,7 +114,9 @@ const Projects = () => {
               >
                 {project.title}
               </h2>
-              <p className={`${prompt.className} text-sm text-neutral-600 dark:text-neutral-300 mb-4`}>
+              <p
+                className={`${prompt.className} text-sm text-neutral-600 dark:text-neutral-300 mb-4`}
+              >
                 {project.description}
               </p>
               <a
