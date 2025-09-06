@@ -67,7 +67,7 @@ const testimonials = [
     quote:
       "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He's a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he's a joy to work with, always positive and communicative.",
     name: "Aaliyah Junaid",
-    designation: "Fullstack /Blockchain Developer at Evento",
+    designation: "Fullstack/Blockchain Developer at Evento",
     src: "/Aaliyah-Junaid-CTO.jpg",
   },
   {
