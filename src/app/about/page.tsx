@@ -305,6 +305,8 @@ const AboutPage = () => {
                 <a
                   className="hover:underline hover:text-[#7b8650]"
                   href="https://www.freecodecamp.org/certification/miguel_theelite/responsive-web-design"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Cert. here
                 </a>
