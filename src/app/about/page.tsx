@@ -1,6 +1,7 @@
 "use client";
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import Image from "next/image";
 import myImage from "/public/20250829_104413.jpg";
 import absoluteMM from "/public/20250331_DC_News_AbsoluteMM3.avif";
 import theMatrix from "/public/the-matrix-1999-poster.jpg";
@@ -73,7 +74,7 @@ const AboutPage = () => {
 
           {/* Image Column */}
           <div className="flex justify-center">
-            <img
+            <Image
               src={myImage.src}
               alt="Miguel - Founder of Northlight Creative Studios"
               width={500}
@@ -97,9 +98,11 @@ const AboutPage = () => {
             <CardBody className="bg-gray-50 relative group/card border border-black/10 w-full h-full rounded-xl p-5 shadow-md dark:bg-black">
               <CardItem translateZ="50">
                 <span className="font-semibold">Lenardo DaVinci</span>
-                <img
+                <Image
                   src={leonardoDavinci.src}
                   alt="A picture of Leonardo DaVinci"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
@@ -123,9 +126,11 @@ const AboutPage = () => {
             <CardBody className="bg-gray-50 relative group/card border border-black/10 w-full h-auto rounded-xl p-4 shadow-md dark:bg-black">
               <CardItem translateZ="50">
                 <span className="font-semibold">ReactJS & NextJS</span>
-                <img
+                <Image
                   src={nextIcon.src}
                   alt="NextJS logo"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
@@ -149,9 +154,11 @@ const AboutPage = () => {
                 <span className="font-semibold">
                   The Matrix Franchise (1999-2003)
                 </span>
-                <img
+                <Image
                   src={theMatrix.src}
                   alt="The Matrix (1999)"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
@@ -176,9 +183,11 @@ const AboutPage = () => {
                 <span className="font-semibold">
                   Absolute Martian Manhunter
                 </span>
-                <img
+                <Image
                   src={absoluteMM.src}
                   alt="Absolute Martian Manhunter comic panel"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
@@ -205,9 +214,11 @@ const AboutPage = () => {
             <CardBody className="bg-gray-50 relative group/card border border-black/10 w-full h-full rounded-xl p-5 shadow-md dark:bg-black">
               <CardItem translateZ="50">
                 <span className="font-semibold">Soundtracks</span>
-                <img
+                <Image
                   src={musicBG.src}
                   alt="A pair of white headphones"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
@@ -229,9 +240,11 @@ const AboutPage = () => {
             <CardBody className="bg-gray-50 relative group/card border border-black/10 w-full h-auto rounded-xl p-4 shadow-md dark:bg-black">
               <CardItem translateZ="50">
                 <span className="font-semibold">Cycling</span>
-                <img
+                <Image
                   src={cycling.src}
-                  alt="The Matrix (1999)"
+                  alt="An image of someone cycling into the sunset"
+                  width={500}
+                  height={500}
                   className="h-full w-full object-cover rounded-lg group-hover/card:shadow-xl"
                 />
               </CardItem>
