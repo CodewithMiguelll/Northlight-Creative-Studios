@@ -1,5 +1,5 @@
 "use client";
-import { Quicksand, Prompt, Podkova, Pacifico } from "next/font/google";
+import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
@@ -9,11 +9,6 @@ import ListCard from "@/components/card";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 // Font for headings.
-const quicksand = Quicksand({
-  variable: "--font-quicksand",
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const quicksandBold = Quicksand({
   variable: "--font-quicksand-bold",
@@ -28,11 +23,6 @@ const quicksandSemiBold = Quicksand({
 });
 
 //Font for subheadings
-const podkova = Podkova({
-  variable: "--font-podkova",
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const podkovaBold = Podkova({
   variable: "--font-podkova",
@@ -47,12 +37,6 @@ const prompt = Prompt({
   weight: "400",
 });
 
-const promptBold = Prompt({
-  variable: "--font-prompt-bold",
-  subsets: ["latin"],
-  weight: "700",
-});
-
 const words = ["UI", "Product", "Website", "Vision"];
 
 const testimonials = [
@@ -65,7 +49,7 @@ const testimonials = [
   },
   {
     quote:
-      "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He's a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he's a joy to work with, always positive and communicative.",
+      "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He&apos;s a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he&apos;s a joy to work with, always positive and communicative.",
     name: "Aaliyah Junaid",
     designation: "Fullstack/Blockchain Developer at Evento",
     src: "/Aaliyah-Junaid-CTO.jpg",
@@ -96,7 +80,7 @@ export default function Home() {
             <h2
               className={`${quicksandSemiBold.className} font-medium text-xl md:text-3xl`}
             >
-              Let's build your next
+              Let&apos;s build your next
               {/*To change the color, you can do so easily by adding TW classes directly to the FlipWords component */}
               <FlipWords
                 className={`${podkovaBold.className} bg-[#f9f9f9] rounded text-[#121212] p-1 m-2.5 font-bold`}
@@ -170,10 +154,10 @@ export default function Home() {
                 precision and creativity.
               </p>
               <p className={`${prompt.className} text-md md:text-lg`}>
-                Whether you're a startup looking to establish your online
+                Whether you&apos;re a startup looking to establish your online
                 presence or an established business aiming to revamp your brand,
                 we have the skills and experience to help you achieve your
-                goals. Let's work together to create something extraordinary.
+                goals. Let&apos;s work together to create something extraordinary.
               </p>
               <span className="flex items-center gap-2 mt-5">
                 <Link href={"/about"}>
@@ -244,10 +228,10 @@ export default function Home() {
         </h2>
         <blockquote className="max-w-3xl mx-auto text-center italic text-lg text-[#121212] p-1 shadow-md mb-16">
           <p>
-            "At Northlight Creative Studios, we pride ourselves with delivering
+            &quot;At Northlight Creative Studios, we pride ourselves with delivering
             exceptional results for our clients. We believe in going the extra
             mile, daring to be different and pushing the boundaries of
-            creativity. But of course, don't take my word for it."
+            creativity. But of course, don&apos;t take my word for it.&quot;
           </p>
           <cite className="text-sm text-[#121212]">
             Chikaima Miguel Uwakwe — Creative Director
@@ -261,12 +245,12 @@ export default function Home() {
         <h2
           className={`${podkovaBold.className} text-2xl md:text-4xl mb-6 text-[#121212] text-center`}
         >
-          Don't Stay Wondering! Get In Touch
+          Don&apos;t Stay Wondering! Get In Touch
         </h2>
 
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 bg-[#fffaf5] p-6 rounded-lg shadow-md">
           <p className="text-lg text-[#121212] text-center mb-10">
-            Have a project in mind? We'd love to hear from you!
+            Have a project in mind? We&apos;d love to hear from you!
           </p>
 
           {/* Email and Contact Page Button row */}
