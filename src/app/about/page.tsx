@@ -8,7 +8,7 @@ import theMatrix from "/public/the-matrix-1999-poster.jpg";
 import nextIcon from "/public/nextjs.png";
 import cycling from "/public/luca-j-ptwR2dPj0po-unsplash.jpg";
 import musicBG from "/public/andrey-ilkevich-yXi7dfyPOyo-unsplash.jpg";
-import leonardoDavinci from "/public/Leonardo-da-Vinci-Italian-Renaissance-Florence-Engraving-1500.webp";
+import leonardoDavinci from "/public/Leonardo-Davinci.jpg";
 
 const quicksandBold = Quicksand({
   variable: "--font-quicksand-bold",
