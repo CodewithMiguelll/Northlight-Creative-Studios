@@ -1,0 +1,6 @@
+# robots.txt for Northlight Creative Studios
+User-agent: *
+Allow: /
+
+# Point search engines to your sitemap
+Sitemap: https://northlight-creative-studios.vercel.app/sitemap.xml
