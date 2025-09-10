@@ -278,9 +278,14 @@ const AboutPage = () => {
             <h3 className="text-lg font-semibold mb-3">Development</h3>
             <ul className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
               <li>JavaScript (ES6+), React, Next.js</li>
-              <li>TypeScript (learning)</li>
-              <li>Python (basic)</li>
+              <li>TypeScript</li>
+              <li>Python</li>
               <li>REST APIs</li>
+              <li>UI/UX Implementation</li>
+              <li>SEO Optimization (Technical + On-Page)</li>
+              <li>Performance Optimization (fast load, Core Web Vitals)</li>
+              <li>Authentication and Authorization (JWT, OAuth)</li>
+              <li>Version Control and Collaboration (Git & GitHub)</li>
             </ul>
           </div>
 
@@ -291,7 +296,7 @@ const AboutPage = () => {
               <li>Tailwind CSS & Shadcn UI</li>
               <li>Framer Motion Animations</li>
               <li>Figma / Canva</li>
-              <li>Responsive Layouts</li>
+              <li>Responsive Layouts and Cross-Browser Compatibility</li>
             </ul>
           </div>
 
@@ -313,6 +318,11 @@ const AboutPage = () => {
               </li>
               <li>Strong Communication & Collaboration</li>
               <li>Problem-Solving & Creative Concepting</li>
+              <li>Adaptability & Continuous Learning</li>
+              <li>Attention to Detail & Quality Assurance</li>
+              <li>Time Management & Meeting Deadlines</li>
+              <li>Client-Focused Solutions</li>
+              <li>Critical Thinking</li>
             </ul>
           </div>
         </div>
