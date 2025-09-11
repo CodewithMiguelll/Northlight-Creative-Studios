@@ -8,6 +8,16 @@ import { motion } from "motion/react";
 import ListCard from "@/components/card";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
+{/*
+  Made with love by Miguel Uwakwe ❤️ 
+  If you're seeing this, it means you have access to the source code of my portfolio website.
+  Please do not use any part of this code without my permission. 
+  If you like what you see, consider hiring me for your next project!
+  Reach me at: chikaimauwakwe@gmail.com
+  Or Instagram: @_big.migz
+  Jesus loves you and so do I!
+*/}
+
 // Font for headings.
 
 const quicksandBold = Quicksand({
