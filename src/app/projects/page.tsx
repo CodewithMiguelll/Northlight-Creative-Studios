@@ -99,7 +99,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            className="bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 hover:z-10"
           >
             <Image
               src={project.image}
