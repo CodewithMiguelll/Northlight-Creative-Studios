@@ -2,7 +2,7 @@
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight, Phone, Mail, Calendar, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import ListCard from "@/components/card";
@@ -167,7 +167,8 @@ export default function Home() {
                 Whether you&apos;re a startup looking to establish your online
                 presence or an established business aiming to revamp your brand,
                 we have the skills and experience to help you achieve your
-                goals. Let&apos;s work together to create something extraordinary.
+                goals. Let&apos;s work together to create something
+                extraordinary.
               </p>
               <span className="flex items-center gap-2 mt-5">
                 <Link href={"/about"}>
@@ -238,9 +239,9 @@ export default function Home() {
         </h2>
         <blockquote className="max-w-3xl mx-auto text-center italic text-lg text-[#121212] p-1 shadow-md mb-16">
           <p>
-            &quot;At Northlight Creative Studios, we pride ourselves with delivering
-            exceptional results for our clients. We believe in going the extra
-            mile, daring to be different and pushing the boundaries of
+            &quot;At Northlight Creative Studios, we pride ourselves with
+            delivering exceptional results for our clients. We believe in going
+            the extra mile, daring to be different and pushing the boundaries of
             creativity. But of course, don&apos;t take my word for it.&quot;
           </p>
           <cite className="text-sm text-[#121212]">
@@ -251,34 +252,70 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="py-20 px-6">
-        <h2
-          className={`${podkovaBold.className} text-2xl md:text-4xl mb-6 text-[#121212] text-center`}
-        >
-          Don&apos;t Stay Wondering! Get In Touch
-        </h2>
-
-        <div className="max-w-3xl mx-auto flex flex-col items-center gap-6 bg-[#fffaf5] p-6 rounded-lg shadow-md">
-          <p className="text-lg text-[#121212] text-center mb-10">
-            Have a project in mind? We&apos;d love to hear from you!
+      <section className="py-20 px-6 bg-[#fffaf5]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2
+            className={`${podkovaBold.className} text-3xl md:text-5xl mb-4 text-[#121212]`}
+          >
+            Don&apos;t Stay Wondering — Let&apos;s Talk!
+          </h2>
+          <p className="text-lg text-[#555] mb-10 max-w-2xl mx-auto">
+            Whether it’s a fresh idea, a project ready to kick off, or just a
+            creative chat — we’d love to hear from you.
           </p>
 
-          {/* Email and Contact Page Button row */}
-          <div className="flex flex-col md:flex-row w-full items-center justify-center gap-4 mt-6">
-            {/* Quick Email Button */}
-            <a
-              href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
-              className="inline-block"
-            >
-              <button className="bg-[#7b8650af] hover:bg-[#7b8650] transition-all text-[#fffaf5] px-6 py-3 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-neutral-400">
-                Say Hello 👋
-              </button>
-            </a>
+          {/* Contact Methods */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="p-6 bg-white rounded-xl shadow-md">
+              <h3 className="font-semibold text-[#121212] mb-2">Email</h3>
+              <a
+                href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
+                className="text-[#7b8650] hover:underline flex items-center justify-center gap-2"
+              >
+                <Mail size={16} />
+                Email Us
+              </a>
+            </div>
 
-            {/* Full Contact Page Button */}
+            <div className="p-6 bg-white rounded-xl shadow-md">
+              <h3 className="font-semibold text-[#121212] mb-2">Book a Call</h3>
+              <a
+                href="https://cal.com/chikaima-uwakwe-004"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#7b8650] hover:underline flex items-center justify-center gap-2"
+              >
+                <Calendar size={16} />
+                Schedule a Call
+              </a>
+            </div>
+
+            <div className="p-6 bg-white rounded-xl shadow-md">
+              <h3 className="font-semibold text-[#121212] mb-2">Follow</h3>
+              <div className="flex justify-center gap-4 text-2xl text-[#7b8650]">
+                <a
+                  href="https://www.linkedin.com/in/chikaima-uwakwe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin size={20} />
+                </a>
+                <a
+                  href="https://instagram.com/_big.migz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram size={20} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="transition-all bg-[#121212] hover:bg-[#e9dac1] hover:text-[#121212] text-[#fffaf5] px-6 py-3 rounded-xl shadow-md focus:outline-none focus:ring-2 focus:ring-neutral-400"
+              className="transition-all bg-[#121212] hover:bg-[#e9dac1] hover:text-[#121212] text-[#fffaf5] px-6 py-3 rounded-xl shadow-md"
             >
               Go to Contact Page
             </Link>
