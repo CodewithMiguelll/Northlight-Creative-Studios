@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Quicksand, Prompt } from "next/font/google";
 
 const quicksandBold = Quicksand({
@@ -89,17 +90,18 @@ const Projects = () => {
       >
         Welcome To The Gallery!
       </h1>
-
       <p className="text-lg text-gray-800 max-w-2xl mx-auto mb-8 text-center">
         A showcase of ideas turned into visuals—crafted with purpose, polished
         with style.
       </p>
-
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <div
+          <Link
             key={index}
-            className="bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 hover:z-10"
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white dark:bg-neutral-900 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 hover:z-10 block"
           >
             <Image
               src={project.image}
@@ -119,16 +121,11 @@ const Projects = () => {
               >
                 {project.description}
               </p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-sm font-medium text-indigo-600 hover:text-indigo-800"
-              >
+              <span className="inline-block text-sm font-medium text-indigo-600 hover:text-indigo-800">
                 View Project →
-              </a>
+              </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
