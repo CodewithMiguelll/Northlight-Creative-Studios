@@ -2,7 +2,7 @@
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Mail, Calendar, Linkedin, Instagram } from "lucide-react";
+import { ArrowRight, Phone, Mail, Calendar, Linkedin, Instagram, Github } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import ListCard from "@/components/card";
@@ -306,6 +306,14 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <Instagram size={20} />
+                </a>
+
+                <a
+                  href="https://github.com/CodeWithMiguelll"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github size={20} />
                 </a>
               </div>
             </div>
