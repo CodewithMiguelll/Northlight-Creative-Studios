@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Instagram, Info, FolderKanban, Briefcase } from "lucide-react";
+import { Github, Instagram, Info, FolderKanban, Briefcase, Linkedin } from "lucide-react";
 import { Pacifico } from "next/font/google";
 
 
@@ -14,7 +14,9 @@ export const Footer = () => (
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
       {/* Branding */}
       <div className="flex flex-col items-center md:items-start space-y-2">
-        <h2 className={`${pacifico.className} text-2xl`}>Northlight Creative Studios</h2>
+        <h2 className={`${pacifico.className} text-2xl`}>
+          Northlight Creative Studios
+        </h2>
         <p className="text-sm text-[#1212128e]">
           Designing, coding, and telling stories that stand out.
         </p>
@@ -51,6 +53,15 @@ export const Footer = () => (
           className="flex items-center gap-2 hover:text-primary transition-colors"
         >
           <Github size={16} /> GitHub
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/chikaima-uwakwe/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-primary transition-colors"
+        >
+          <Linkedin size={16} /> LinkedIn
         </a>
         <a
           href="https://www.instagram.com/_big.migz/"
