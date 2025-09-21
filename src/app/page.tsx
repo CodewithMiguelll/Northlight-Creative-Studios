@@ -59,7 +59,7 @@ const testimonials = [
   },
   {
     quote:
-      "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He&apos;s a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he&apos;s a joy to work with, always positive and communicative.",
+      "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He&apos;s a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he's a joy to work with, always positive and communicative.",
     name: "Aaliyah Junaid",
     designation: "Fullstack/Blockchain Developer at Evento",
     src: "/Aaliyah-Junaid-CTO.jpg",
@@ -84,7 +84,7 @@ export default function Home() {
   return (
     <div className="px-2.5">
       {/* HERO SECTION */}
-      <section className="py-40">
+      <section className="py-20">
         <div className="flex flex-col md:flex-row justify-around items-center p-4">
           <div className="flex justify-center items-center md:items-start flex-col gap-6 p-6 text-[#121212]">
             <h2
