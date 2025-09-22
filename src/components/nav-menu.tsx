@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -6,34 +9,36 @@ import {
 } from "@/components/ui/navigation-menu";
 
 const Navigation = () => {
+  const pathname = usePathname();
+
+  const links = [
+    { href: "/about", label: "About" },
+    { href: "/projects", label: "Projects" },
+    { href: "/services", label: "Services" },
+  ];
+
   return (
     <div className="flex justify-center my-6 text-[#121212] font-medium">
       <NavigationMenu className="mx-4 flex">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              className="flex text-[16px] hover:bg-[#f3f4f6]"
-              href="/about"
-            >
-              About
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              className="flex text-[16px] hover:bg-[#f3f4f6]"
-              href="/projects"
-            >
-              Projects
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <NavigationMenuLink
-              className="flex text-[16px] hover:bg-[#f3f4f6]"
-              href="/services"
-            >
-              Services
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <NavigationMenuItem key={link.href}>
+                <NavigationMenuLink
+                  href={link.href}
+                  className={`flex text-[16px] p-2.5 rounded-md transition-colors ${
+                    isActive
+                      ? "bg-[#121212] text-white" 
+                      : "hover:bg-[#f3f4f6]"
+                  }`}
+                >
+                  {link.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            );
+          })}
         </NavigationMenuList>
       </NavigationMenu>
     </div>
