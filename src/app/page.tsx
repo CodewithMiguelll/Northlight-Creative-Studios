@@ -269,7 +269,7 @@ export default function Home() {
             <div className="p-6 bg-white rounded-xl shadow-md">
               <h3 className="font-semibold text-[#121212] mb-2">Email</h3>
               <a
-                href="mailto:chikaimauwakwe@gmail.com?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
+                href="mailto:hello@madebynorthlight.com.ng?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
                 className="text-[#7b8650] hover:underline flex items-center justify-center gap-2"
               >
                 <Mail size={16} />
