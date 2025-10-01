@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Point search engines to your sitemap
-Sitemap: https://northlight-creative-studios.vercel.app/sitemap.xml
+Sitemap: https://madebynorthlight.com.ng/sitemap.xml
