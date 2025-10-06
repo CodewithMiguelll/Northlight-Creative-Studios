@@ -47,7 +47,7 @@ const prompt = Prompt({
   weight: "400",
 });
 
-const words = ["UI", "Product", "Website", "Vision"];
+const words = ["Idea", "Product", "Website", "Vision"];
 
 const testimonials = [
   {
@@ -121,23 +121,10 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="py-20">
+      <section className="mt-28">
         <div className="flex flex-col md:flex-row justify-around items-center gap-8 p-4">
-          <div className=" md:flex order-2 md:order-1 justify-center items-center md:w-1/2 p-8">
-            <motion.img
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              src="/3644996.jpg"
-              alt="Freelancer working on a project."
-              className="rounded-lg shadow-md "
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="flex order-1 md:order-2 justify-center items-center md:w-1/2 p-8 text-[#121212]">
-            <div className="max-w-lg">
+          <div className="flex justify-center items-center md:w-1/2 text-center text-[#121212]">
+            <div className="w-full">
               <h2
                 className={`${podkovaBold.className} text-2xl md:text-4xl mb-4`}
               >
@@ -157,7 +144,7 @@ export default function Home() {
                 goals. Let&apos;s work together to create something
                 extraordinary.
               </p>
-              <span className="flex items-center gap-2 mt-5">
+              <span className="flex items-center gap-2 mt-5 justify-center">
                 <Link href={"/about"}>
                   <Button className="bg-[#7b8650af] flex items-center gap-2 p-1 text-[#121212] hover:bg-[#7b8650]">
                     Learn More
