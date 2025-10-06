@@ -203,7 +203,7 @@ export default function ServicesPage() {
               </ul>
               <Link
                 href="/contact"
-                className="mt-6 block text-center bg-[#7b8650] text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700 transition"
+                className="mt-6 block text-center bg-[#7b8650] text-white px-4 py-2 rounded-lg shadow hover:bg-[#7b8650e5] transition"
               >
                 Get Started
               </Link>
