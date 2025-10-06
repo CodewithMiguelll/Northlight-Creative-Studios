@@ -10,7 +10,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 {/*
   Made with love by Miguel Uwakwe ❤️ 
-  If you're seeing this, it means you have access to the source code of my portfolio website.
+  If you're seeing this, it means you have access to the source code of my creative agency website.
   Please do not use any part of this code without my permission. 
   If you like what you see, consider hiring me for your next project!
   Reach me at: chikaimauwakwe@gmail.com
@@ -84,11 +84,11 @@ export default function Home() {
   return (
     <div className="px-2.5">
       {/* HERO SECTION */}
-      <section className="py-20">
-        <div className="flex flex-col md:flex-row justify-around items-center p-4">
-          <div className="flex justify-center items-center md:items-start flex-col gap-6 p-6 text-[#121212]">
+      <section className="mt-28">
+        <div className="flex flex-col justify-center items-center p-6">
+          <div className="flex justify-center items-center flex-col gap-6 text-center text-[#121212]">
             <h2
-              className={`${quicksandSemiBold.className} font-medium text-xl md:text-3xl`}
+              className={`${quicksandSemiBold.className} font-medium text-xl md:text-4xl`}
             >
               Let&apos;s build your next
               {/*To change the color, you can do so easily by adding TW classes directly to the FlipWords component */}
@@ -98,37 +98,24 @@ export default function Home() {
               />
               at
             </h2>
-            <h1 className={`${quicksandBold.className} text-3xl md:text-6xl`}>
+            <h1 className={`${quicksandBold.className} text-4xl md:text-7xl text-pretty`}>
               Northlight Creative Studios
             </h1>
             <span className="flex items-center gap-4 mt-6">
               <Link href={"/projects"}>
-                <Button className="transition-all hover:translate-x-1 bg-[#fffaf5] hover:bg-[#ffffff] text-[#121212] p-6">
+                <Button className="transition-all hover:-translate-y-2 bg-[#fffaf5] hover:bg-[#ffffff] text-[#121212] p-6">
                   View The Gallery
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </Button>
               </Link>
 
               <Link href={"/contact"}>
-                <Button className="transition-all hover:translate-x-2 bg-[#7b8650af] hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212] p-6">
+                <Button className="transition-all hover:-translate-y-2 bg-[#7b8650af] hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212] p-6">
                   <Phone className="w-4 h-4 ml-1" />
                   Get In Touch
                 </Button>
               </Link>
             </span>
-          </div>
-          <div className="md:flex justify-center items-center">
-            <motion.img
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              src="/freepik__upload__71496.png"
-              alt="Freelancer working on a project"
-              className="rounded-lg shadow-md"
-              width={500}
-              height={500}
-            />
           </div>
         </div>
       </section>
