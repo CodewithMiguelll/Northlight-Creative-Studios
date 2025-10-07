@@ -28,10 +28,10 @@ const Navigation = () => {
               <NavigationMenuItem key={link.href}>
                 <NavigationMenuLink
                   href={link.href}
-                  className={`flex text-[16px] p-2.5 rounded-md transition-colors ${
+                  className={`flex text-[16px] p-3.5 rounded-md transition-colors ${
                     isActive
-                      ? "bg-[#121212] text-white" 
-                      : "hover:bg-[#f3f4f6]"
+                      ? "bg-purple-600 text-white" 
+                      : "hover:bg-purple-500 hover:text-white"
                   }`}
                 >
                   {link.label}
