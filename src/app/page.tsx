@@ -1,6 +1,7 @@
 "use client";
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
+import HeroSectionOne from "@/components/hero-section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail, Calendar, Linkedin, Instagram, Github } from "lucide-react";
 import Link from "next/link";
@@ -83,43 +84,8 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="px-2.5">
-      {/* HERO SECTION */}
-      <section className="mt-28">
-        <div className="flex flex-col justify-center items-center p-6">
-          <div className="flex justify-center items-center flex-col gap-6 text-center text-[#121212]">
-            <h2
-              className={`${quicksandSemiBold.className} font-medium text-xl md:text-4xl`}
-            >
-              Let&apos;s build your next
-              {/*To change the color, you can do so easily by adding TW classes directly to the FlipWords component */}
-              <FlipWords
-                className={`${podkovaBold.className} bg-[#f9f9f9] rounded text-[#121212] p-1 m-2.5 font-bold`}
-                words={words}
-              />
-              at
-            </h2>
-            <h1 className={`${quicksandBold.className} text-4xl md:text-7xl text-pretty`}>
-              Northlight Creative Studios
-            </h1>
-            <span className="flex items-center gap-4 mt-6">
-              <Link href={"/projects"}>
-                <Button className="transition-all hover:-translate-y-2 bg-[#fffaf5] hover:bg-[#ffffff] text-[#121212] p-6">
-                  View The Gallery
-                  <ArrowRight className="w-4 h-4 ml-1" />
-                </Button>
-              </Link>
-
-              <Link href={"/contact"}>
-                <Button className="transition-all hover:-translate-y-2 bg-[#7b8650af] hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212] p-6">
-                  <Phone className="w-4 h-4 ml-1" />
-                  Get In Touch
-                </Button>
-              </Link>
-            </span>
-          </div>
-        </div>
-      </section>
-
+      
+      <HeroSectionOne />
       {/* ABOUT SECTION */}
       <section className="mt-28">
         <div className="flex flex-col md:flex-row justify-around items-center gap-8 p-4">
