@@ -3,13 +3,25 @@ import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { FlipWords } from "@/components/ui/flip-words";
 import HeroSectionOne from "@/components/hero-section";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Mail, Calendar, Linkedin, Instagram, Github } from "lucide-react";
+import {
+  ArrowRight,
+  Code2,
+  Paintbrush,
+  Palette,
+  Compass,
+  Mail,
+  Calendar,
+  Linkedin,
+  Instagram,
+  Github,
+} from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
 import ListCard from "@/components/card";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
-{/*
+{
+  /*
   Made with love by Miguel Uwakwe ❤️ 
   If you're seeing this, it means you have access to the source code of my creative agency website.
   Please do not use any part of this code without my permission. 
@@ -17,7 +29,8 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
   Reach me at: chikaimauwakwe@gmail.com
   Or Instagram: @_big.migz
   Jesus loves you and so do I!
-*/}
+*/
+}
 
 // Font for headings.
 
@@ -84,89 +97,151 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="px-2.5">
-      
       <HeroSectionOne />
       {/* ABOUT SECTION */}
       <section className="mt-28">
-        <div className="flex flex-col md:flex-row justify-around items-center gap-8 p-4">
-          <div className="flex justify-center items-center md:w-1/2 text-center text-[#121212]">
-            <div className="w-full">
-              <h2
-                className={`${podkovaBold.className} text-2xl md:text-4xl mb-4`}
-              >
-                Who We Are
-              </h2>
-              <p className={`${prompt.className} text-md md:text-lg mb-4`}>
-                At The Studio, we are a multidisciplinary freelancing agency
-                dedicated to bringing your ideas to life. Our team of experts
-                specializes in web development, design, and content creation,
-                ensuring that every project we undertake is executed with
-                precision and creativity.
-              </p>
-              <p className={`${prompt.className} text-md md:text-lg`}>
-                Whether you&apos;re a startup looking to establish your online
-                presence or an established business aiming to revamp your brand,
-                we have the skills and experience to help you achieve your
-                goals. Let&apos;s work together to create something
-                extraordinary.
-              </p>
-              <span className="flex items-center gap-2 mt-5 justify-center">
-                <Link href={"/about"}>
-                  <Button className="bg-[#7b8650af] flex items-center gap-2 p-1 text-[#121212] hover:bg-[#7b8650]">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-1" />
-                  </Button>
-                </Link>
-              </span>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-12 px-6 md:px-12">
+          {/* IMAGE */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="w-full md:w-1/2 flex justify-center"
+          >
+            <img
+              src="/uk-black-tech-dfmsZyFVi_I-unsplash.jpg"
+              alt="Freelancer working on a project."
+              className="rounded-2xl shadow-xl object-cover w-[90%] md:w-[80%] max-w-[500px]"
+            />
+          </motion.div>
+
+          {/* TEXT */}
+          <div className="w-full md:w-1/2 text-center md:text-left text-[#121212]">
+            <h2
+              className={`${podkovaBold.className} text-3xl md:text-5xl mb-6`}
+            >
+              Who We Are
+            </h2>
+            <p
+              className={`${prompt.className} text-base md:text-lg mb-5 leading-relaxed`}
+            >
+              Northlight Creative Studios is a multidisciplinary agency built on
+              creativity, clarity, and craft. Founded by Chikaima Miguel Uwakwe,
+              we blend design and technology to create digital experiences that
+              shine — from sleek, responsive websites to thoughtful product
+              interfaces.
+            </p>
+            <p
+              className={`${prompt.className} text-base md:text-lg leading-relaxed`}
+            >
+              We believe great design is more than visuals — it’s strategy,
+              emotion, and storytelling in motion. Every project we take on is
+              guided by precision, purpose, and a bold confidence that
+              challenges the ordinary. At Northlight, our mission is simple: to
+              help brands and creators express their identity through design
+              that connects and endures.
+            </p>
+
+            <div className="flex justify-center md:justify-start mt-8">
+              <Link href="/about">
+                <button className="bg-[#7e57c2] flex items-center gap-2 px-6 py-3 rounded-md transition-all duration-300 hover:translate-x-0.5 text-[#f5f5f5] hover:bg-purple-700">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* FEATURES SECTION*/}
-      <section className="py-20">
-        <h2
-          className={`${podkovaBold.className} text-2xl md:text-4xl mb-8 text-[#121212] text-center`}
-        >
-          Why Choose Northlight Creative Studios?
-        </h2>
+      <section className="py-24 mt-12 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" />
 
-        <div className="grid  gap-6 md:grid-cols-3 max-w-6xl mx-auto px-4">
-          {[
-            {
-              title: "Web Development",
-              details: [
-                "Responsive website design",
-                "Frontend engineering (React, Next.js)",
-                "Backend integration",
-                "Performance optimization",
-              ],
-            },
-            {
-              title: "Graphics Design",
-              details: [
-                "Logo & brand identity",
-                "Social media graphics",
-                "Custom illustrations",
-                "Marketing assets",
-              ],
-            },
-            {
-              title: "Product Design",
-              details: [
-                "UI/UX design",
-                "Wireframes & prototypes",
-                "Interaction design",
-                "Design systems",
-              ],
-            },
-          ].map((feature, index) => (
-            <ListCard
-              key={index}
-              title={feature.title}
-              details={feature.details}
-            />
-          ))}
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          {/* Section Title */}
+          <motion.h2
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className={`${podkovaBold.className} text-3xl md:text-5xl text-center text-[#121212] mb-4`}
+          >
+            Why Choose Northlight Creative Studios?
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className={`${prompt.className} text-center text-gray-600 max-w-3xl mx-auto mb-14`}
+          >
+            We don&apos;t just build — we craft. From strategy to execution,
+            every detail is shaped with purpose, precision, and a flair for the
+            extraordinary.
+          </motion.p>
+
+          {/* Features Grid */}
+          <div className="grid gap-10 md:grid-cols-3">
+            {[
+              {
+                icon: <Code2 className="w-12 h-12 text-[#e91e63]" />,
+                title: "Web Development",
+                details: [
+                  "Responsive website design",
+                  "Frontend engineering (React, Next.js)",
+                  "Backend integration",
+                  "Performance optimization",
+                ],
+              },
+              {
+                icon: <Palette className="w-12 h-12 text-[#e91e63]" />,
+                title: "Graphics Design",
+                details: [
+                  "Logo & brand identity",
+                  "Social media graphics",
+                  "Custom illustrations",
+                  "Marketing assets",
+                ],
+              },
+              {
+                icon: <Compass className="w-12 h-12 text-[#e91e63]" />,
+                title: "Product Design",
+                details: [
+                  "UI/UX design",
+                  "Wireframes & prototypes",
+                  "Interaction design",
+                  "Design systems",
+                ],
+              },
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col justify-between"
+              >
+                <div className="mb-6">{feature.icon}</div>
+                <h3
+                  className={`${podkovaBold.className} text-xl md:text-2xl text-[#121212] mb-3`}
+                >
+                  {feature.title}
+                </h3>
+                <ul className={`${prompt.className} text-gray-600 space-y-2`}>
+                  {feature.details.map((detail, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-purple-600">•</span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -192,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section className="py-20 px-6 bg-[#fffaf5]">
+      <section className="py-20 px-6 rounded-3xl">
         <div className="max-w-4xl mx-auto text-center">
           <h2
             className={`${podkovaBold.className} text-3xl md:text-5xl mb-4 text-[#121212]`}
@@ -210,7 +285,7 @@ export default function Home() {
               <h3 className="font-semibold text-[#121212] mb-2">Email</h3>
               <a
                 href="mailto:hello@madebynorthlight.com.ng?subject=Let’s Work Together&body=Hi NC Studios team, I’d like to get in touch about..."
-                className="text-[#7b8650] hover:underline flex items-center justify-center gap-2"
+                className="text-[#121212] hover:underline flex items-center justify-center gap-2"
               >
                 <Mail size={16} />
                 Email Us
@@ -223,7 +298,7 @@ export default function Home() {
                 href="https://cal.com/chikaima-uwakwe-004"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#7b8650] hover:underline flex items-center justify-center gap-2"
+                className="text-[#121212] hover:underline flex items-center justify-center gap-2"
               >
                 <Calendar size={16} />
                 Schedule a Call
@@ -232,7 +307,7 @@ export default function Home() {
 
             <div className="p-6 bg-white rounded-xl shadow-md">
               <h3 className="font-semibold text-[#121212] mb-2">Follow</h3>
-              <div className="flex justify-center gap-4 text-2xl text-[#7b8650]">
+              <div className="flex justify-center gap-4 text-2xl text-[#e91e62]">
                 <a
                   href="https://www.linkedin.com/in/chikaima-uwakwe/"
                   target="_blank"
@@ -259,11 +334,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="transition-all bg-[#121212] hover:bg-[#e9dac1] hover:text-[#121212] text-[#fffaf5] px-6 py-3 rounded-xl shadow-md"
+              className="transition-all duration-200 bg-[#7e57c2] hover:bg-purple-700 text-[#fffaf5] px-6 py-3 rounded-xl shadow-md"
             >
               Go to Contact Page
             </Link>
