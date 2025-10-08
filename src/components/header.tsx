@@ -22,7 +22,7 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className={`${pacifico.className} text-xl font-bold text-white`}
+          className={`${pacifico.className} text-xl font-bold text-[#121212]`}
         >
           NorthLight Creative Studios
         </Link>
