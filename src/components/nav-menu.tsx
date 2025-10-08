@@ -30,8 +30,8 @@ const Navigation = () => {
                   href={link.href}
                   className={`flex text-[16px] p-2.5 rounded-md transition-colors ${
                     isActive
-                      ? "bg-[#121212] text-white" 
-                      : "hover:bg-[#f3f4f6]"
+                      ? "border-b-[#e91e62ce] border-b-6 text-[#121212]" 
+                      : "hover:bg-[#7e57c2] hover:text-white"
                   }`}
                 >
                   {link.label}
