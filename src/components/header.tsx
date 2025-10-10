@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Pacifico } from "next/font/google";
+import { Button } from "@/components/ui/button";
 import NavMenu from "@/components/nav-menu";
 import { Menu, X } from "lucide-react"; // hamburger & close icons
 
@@ -31,14 +32,14 @@ export default function Header() {
           <NavMenu />
           <div className="flex items-center gap-4">
             <Link href={"/contact"}>
-              <button className="transition-all bg-purple-600 p-2.5 rounded-md font-medium text-white hover:-translate-y-1 hover:bg-[#7e57c2]">
+              <Button className="transition-all hover:translate-y-1 bg-[#fffaf5] hover:bg-[#ffffff] hover:shadow-2xl hover:shadow-white hover:text-[#121212] text-[#121212]">
                 Contact Us
-              </button>
+              </Button>
             </Link>
             <Link href={"https://cal.com/chikaima-uwakwe-004"} target="_blank">
-              <button className="transition-all p-2.5 rounded-md font-medium text-[#2196f3] border-2 border-[#2196f3] hover:bg-blue-500 hover:text-white hover:-translate-y-1">
+              <Button className="bg-[#7b8650af] transition hover:bg-[#7b8650] hover:text-[#fafafa] text-[#121212]">
                 Book A Call
-              </button>
+              </Button>
             </Link>
           </div>
         </div>
@@ -47,9 +48,9 @@ export default function Header() {
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? (
-              <X className="text-[#121212] w-7 h-7 cursor-pointer" />
+              <X className="text-white w-7 h-7 cursor-pointer" />
             ) : (
-              <Menu className="text-[#121212] w-7 h-7 hover:cursor-pointer" />
+              <Menu className="text-white w-7 h-7 hover:cursor-pointer" />
             )}
           </button>
         </div>
@@ -61,18 +62,18 @@ export default function Header() {
           <NavMenu />
           <div className="flex items-center gap-6 p-0.5 justify-between">
             <Link href={"/contact"} onClick={() => setIsOpen(false)}>
-              <button className="w-full bg-purple-600 p-2.5 rounded-md font-medium text-white hover:-translate-y-1 hover:bg-[#7e57c2 ">
+              <Button className="w-full bg-[#fffaf5] text-[#121212] hover:bg-[#e9dac1] hover:text-[#121212]">
                 Contact Us
-              </button>
+              </Button>
             </Link>
             <Link
               href={"https://cal.com/chikaima-uwakwe-004"}
               target="_blank"
               onClick={() => setIsOpen(false)}
             >
-              <button className="w-full transition-all p-2.5 rounded-md font-medium text-[#2196f3] border-2 border-[#2196f3]">
+              <Button className="w-full bg-[#7b8650af] text-[#121212] hover:bg-[#7b8650] hover:text-[#fafafa]">
                 Book A Call
-              </button>
+              </Button>
             </Link>
           </div>
         </div>
