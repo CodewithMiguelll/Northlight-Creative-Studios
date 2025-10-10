@@ -2,13 +2,13 @@
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
-import myImage from "/public/20250829_104413.jpg";
-import absoluteMM from "/public/20250331_DC_News_AbsoluteMM3.avif";
-import theMatrix from "/public/the-matrix-1999-poster.jpg";
-import nextIcon from "/public/nextjs.png";
-import cycling from "/public/luca-j-ptwR2dPj0po-unsplash.jpg";
-import musicBG from "/public/andrey-ilkevich-yXi7dfyPOyo-unsplash.jpg";
-import leonardoDavinci from "/public/Leonardo-Davinci.jpg";
+import myImage from "/public/images/chikaima-uwakwe.jpg";
+import absoluteMM from "/public/images/20250331_DC_News_AbsoluteMM3.avif";
+import theMatrix from "/public/images/the-matrix-1999-poster.jpg";
+import nextIcon from "/public/images/nextjs.png";
+import cycling from "/public/images/luca-j-ptwR2dPj0po-unsplash.jpg";
+import musicBG from "/public/images/andrey-ilkevich-yXi7dfyPOyo-unsplash.jpg";
+import leonardoDavinci from "/public/images/Leonardo-Davinci.jpg";
 
 const quicksandBold = Quicksand({
   variable: "--font-quicksand-bold",
@@ -63,9 +63,9 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View Resume"
-                //download="chikaima-miguel-resume.pdf"
+                download="chikaima-miguel-resume.pdf"
               >
-                <button className="bg-[#7b8650af] hover:bg-[#7b8650] text-white px-6 py-3 rounded-xl shadow-md">
+                <button className="bg-[#7e57c2d7] hover:bg-[#7e57c2] text-white px-6 py-3 rounded-xl shadow-md">
                   View Resume
                 </button>
               </a>
@@ -79,20 +79,20 @@ const AboutPage = () => {
               alt="Miguel - Founder of Northlight Creative Studios"
               width={500}
               height={500}
-              className="h-auto rounded-3xl shadow-lg border-3 border-[#e9dac1]"
+              className="h-auto rounded-3xl shadow-xl border-3 border-[#2196f3] ring-2 ring-[#e91e63]"
             />
           </div>
         </div>
 
-        {/* Comic Inspiration Section */}
+        {/* Inspiration Section */}
         <h2
-          className={`${podkovaBold.className} text-3xl md:text-4xl mt-16 mb-4`}
+          className={`${podkovaBold.className} text-3xl md:text-5xl mt-28 mb-4`}
         >
           What Inspires Me
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Comic Card */}
+          {/* Cards */}
 
           <CardContainer>
             <CardBody className="bg-gray-50 relative group/card border border-black/10 w-full h-full rounded-xl p-5 shadow-md dark:bg-black">
@@ -308,7 +308,7 @@ const AboutPage = () => {
                 FreeCodeCamp — Responsive Web Design:
                 <br />
                 <a
-                  className="hover:underline hover:text-[#7b8650]"
+                  className="hover:underline hover:text-[#7e57c2]"
                   href="https://www.freecodecamp.org/certification/miguel_theelite/responsive-web-design"
                   target="_blank"
                   rel="noopener noreferrer"
