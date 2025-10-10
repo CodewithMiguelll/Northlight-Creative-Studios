@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     "modern web development",
   ],
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "/assets/favicon.ico",
+    apple: "/assets/apple-touch-icon.png",
   },
   openGraph: {
     title: "Northlight Creative Studios",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "Northlight Creative Studios",
     images: [
       {
-        url: "/og-image-default.png",
+        url: "/assets/og-image-default.png",
         width: 1200,
         height: 630,
         alt: "Northlight Creative Studios OG image",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Northlight Creative Studios",
     description:
       "Guiding brands and businesses toward creative excellence through design and modern web development.",
-    images: ["/og-image-default.png"],
+    images: ["/assets/og-image-default.png"],
   },
   alternates: {
     canonical: "https://madebynorthlight.com.ng",
@@ -63,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gradient-to-b from-[#fdfcff] to-[#f3eefb]">
         <Header />
         {children}
         <Footer />
