@@ -39,7 +39,7 @@ export default function HeroSectionOne() {
             duration: 0.3,
             delay: 0.8,
           }}
-          className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
+          className="relative z-10 mx-auto max-w-xl py-4 text-center text-md md:text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
           At Northlight Creative Studios, we help entrereneurs, brands, and
           creators find their voice, craft their vision, and shine like the
