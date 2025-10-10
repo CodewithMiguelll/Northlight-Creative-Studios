@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Northlight Creative Studios",
     images: [
       {
-        url: "https://madebynorthlight.com.ng/og-image.png",
+        url: "https://madebynorthlight.com.ng/assets/og-image-default.png",
         width: 1200,
         height: 630,
         alt: "Northlight Creative Studios banner",
