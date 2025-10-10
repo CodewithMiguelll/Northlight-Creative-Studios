@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Northlight Creative Studios",
     images: [
       {
-        url: "https://madebynorthlight.com.ng/og-image-projects.png",
+        url: "https://madebynorthlight.com.ng/assets/og-image-projects.png",
         width: 1200,
         height: 630,
         alt: "Northlight Creative Studios portfolio projects",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Projects | Northlight Creative Studios",
     description:
       "See the latest web projects and design showcases from Northlight Creative Studios.",
-    images: ["https://madebynorthlight.com.ng/og-image-projects.png"],
+    images: ["https://madebynorthlight.com.ng/assets/og-image-projects.png"],
   },
 };
 

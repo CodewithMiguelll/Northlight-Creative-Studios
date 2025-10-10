@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://madebynorthlight.com.ng/services",
     images: [
       {
-        url: "https://madebynorthlight.com.ng/og-image-services.png",
+        url: "https://madebynorthlight.com.ng/assets/og-image-services.png",
         width: 1200,
         height: 630,
         alt: "Northlight Creative Studios - Services",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Services | Northlight Creative Studios",
     description:
       "Discover our services at The Studio: frontend engineering, product design, and modern web development tailored to your needs.",
-    images: ["https://madebynorthlight.com.ng/og-image-services.png"],
+    images: ["https://madebynorthlight.com.ng/assets/og-image-services.png"],
   },
 };
 
