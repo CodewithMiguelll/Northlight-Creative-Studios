@@ -1,5 +1,13 @@
 "use client";
 import { useState } from "react";
+import { Quicksand } from "next/font/google";
+import { motion, AnimatePresence } from "framer-motion";
+
+const quicksandBold = Quicksand({
+  variable: "--font-quicksand-bold",
+  subsets: ["latin"],
+  weight: "700",
+});
 
 export default function ContactPage() {
   const [status, setStatus] = useState<
@@ -17,9 +25,7 @@ export default function ContactPage() {
       const res = await fetch("https://formspree.io/f/mnngdevo", {
         method: "POST",
         body: data,
-        headers: {
-          Accept: "application/json",
-        },
+        headers: { Accept: "application/json" },
       });
 
       if (res.ok) {
@@ -28,21 +34,26 @@ export default function ContactPage() {
       } else {
         setStatus("error");
       }
-    } catch (err) {
-      console.error("Error submitting form:", err);
+    } catch {
       setStatus("error");
     }
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen px-4">
-      <form
+    <div className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-b from-[#faf8ff] via-[#f4f1fa] to-[#ebe6f7]">
+      <motion.form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-4 bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="flex flex-col gap-4 bg-white/80 backdrop-blur-md border border-[#eae7ff] p-8 rounded-2xl shadow-md w-full max-w-md"
       >
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h1>
-        <p className="text-gray-600 mb-6">
-          Got a project in mind? Fill out the form and we’ll get back to you.
+        <h1 className="text-3xl font-semibold text-[#121212] mb-2 text-center">
+          Let’s Connect
+        </h1>
+        <p className="text-gray-600 mb-4 text-center">
+          Got a project in mind? Tell us what you’re dreaming of — we’ll bring
+          it to light.
         </p>
 
         <input
@@ -50,42 +61,58 @@ export default function ContactPage() {
           name="name"
           placeholder="Your Name"
           required
-          className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7e57c2] transition-all"
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7e57c2] transition-all"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
           rows={5}
-          className="border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7e57c2] transition-all"
         />
 
-        <button
+        <motion.button
           type="submit"
           disabled={status === "loading"}
-          className="bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:opacity-90 transition disabled:opacity-50"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="bg-[#7e57c2] text-white font-medium py-3 px-6 rounded-lg transition-all hover:bg-[#6b46b2] disabled:opacity-60"
         >
           {status === "loading" ? "Sending..." : "Send Message"}
-        </button>
+        </motion.button>
 
-        {status === "success" && (
-          <p className="mt-4 text-green-600">
-            ✅ Thanks! Your message has been sent.
-          </p>
-        )}
-        {status === "error" && (
-          <p className="mt-4 text-red-600">
-            ❌ Oops! Something went wrong. Try again.
-          </p>
-        )}
-      </form>
+        <AnimatePresence mode="wait">
+          {status === "success" && (
+            <motion.p
+              key="success"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="mt-4 text-green-600 text-center"
+            >
+              ✅ Thanks! Your message has been sent.
+            </motion.p>
+          )}
+          {status === "error" && (
+            <motion.p
+              key="error"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="mt-4 text-red-600 text-center"
+            >
+              ❌ Oops! Something went wrong. Please try again.
+            </motion.p>
+          )}
+        </AnimatePresence>
+      </motion.form>
     </div>
   );
 }
