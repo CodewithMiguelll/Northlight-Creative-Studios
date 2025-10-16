@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   alternates: {
-    canonical: "https://madebynorthlight.com.ng/about",
+    canonical: "https://www.madebynorthlight.com.ng/about",
   },
 };
 
