@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Let’s connect — reach out to The Studio for collaborations, projects, or to book a call.",
 
   alternates: {
-    canonical: "https://madebynorthlight.com.ng/contact",
+    canonical: "https://www.madebynorthlight.com.ng/contact",
   },
 
   openGraph: {
