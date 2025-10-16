@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     images: ["/assets/og-image-default.png"],
   },
   alternates: {
-    canonical: "https://madebynorthlight.com.ng",
+    canonical: "https://www.madebynorthlight.com.ng",
   },
 };
 
