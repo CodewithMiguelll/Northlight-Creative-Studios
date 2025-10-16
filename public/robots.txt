@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 
-Sitemap: https://madebynorthlight.com.ng/sitemap.xml
+Sitemap: https://www.madebynorthlight.com.ng/sitemap.xml
