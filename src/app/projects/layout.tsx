@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "creative studio work",
   ],
   alternates: {
-    canonical: "https://madebynorthlight.com.ng/projects",
+    canonical: "https://www.madebynorthlight.com.ng/projects",
   },
   openGraph: {
     title: "Projects | Northlight Creative Studios",
