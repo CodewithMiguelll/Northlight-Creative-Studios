@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Header from "@/components/header";
 import { Footer } from "@/components/footer";
+import { headers } from "next/headers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://madebynorthlight.com.ng"),
@@ -51,18 +52,22 @@ export const metadata: Metadata = {
       "Guiding brands and businesses toward creative excellence through design and modern web development.",
     images: ["/assets/og-image-default.png"],
   },
-  alternates: {
-    canonical: "https://www.madebynorthlight.com.ng",
-  },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const headersList = await headers(); // sync, no need to await
+  const path = headersList.get("x-pathname") || "";
+  const canonical = `https://madebynorthlight.com.ng${path}`;
+
   return (
     <html lang="en">
+      <head>
+        <link rel="canonical" href={canonical} />
+      </head>
       <body className="bg-gradient-to-b from-[#fdfcff] to-[#f3eefb]">
         <Header />
         {children}
