@@ -4,23 +4,25 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects | Northlight Creative Studios",
   description:
-    "Discover the portfolio of Northlight Creative Studios — modern websites, UI/UX design, and interactive projects built with React, Next.js, and creative design thinking.",
+    "Explore Northlight Creative Studios’ portfolio — modern websites, intuitive interfaces, and immersive digital experiences built with React, Next.js, and artistic precision.",
   keywords: [
     "Northlight Creative Studios",
     "portfolio",
-    "web design projects",
-    "frontend development",
-    "UI/UX case studies",
+    "web design agency",
+    "frontend developer portfolio",
+    "React projects",
     "Next.js websites",
+    "UI/UX design portfolio",
     "creative studio work",
+    "modern web design",
   ],
   alternates: {
-    canonical: "https://www.madebynorthlight.com.ng/projects",
+    canonical: "https://madebynorthlight.com.ng/projects",
   },
   openGraph: {
     title: "Projects | Northlight Creative Studios",
     description:
-      "Browse projects by Northlight Creative Studios — sleek websites, UI/UX design, and frontend development with React and Next.js.",
+      "Discover the creative and technical work of Northlight Creative Studios — a fusion of design, code, and storytelling in every project.",
     url: "https://madebynorthlight.com.ng/projects",
     siteName: "Northlight Creative Studios",
     images: [
@@ -31,13 +33,14 @@ export const metadata: Metadata = {
         alt: "Northlight Creative Studios portfolio projects",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Projects | Northlight Creative Studios",
     description:
-      "See the latest web projects and design showcases from Northlight Creative Studios.",
+      "See how Northlight Creative Studios blends design and development to craft standout digital experiences.",
     images: ["https://madebynorthlight.com.ng/assets/og-image-projects.png"],
   },
 };

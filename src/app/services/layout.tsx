@@ -4,12 +4,27 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services | Northlight Creative Studios",
   description:
-    "Discover our services: frontend engineering, product design, and modern web development tailored to your needs.",
+    "Explore the creative and technical services of Northlight Creative Studios — from frontend engineering to UI/UX design, branding, and full-stack web development tailored to your vision.",
+  keywords: [
+    "Northlight Creative Studios",
+    "web development services",
+    "frontend engineering",
+    "UI/UX design",
+    "product design",
+    "branding and identity",
+    "Next.js developer",
+    "creative web agency",
+    "modern website design",
+  ],
+  alternates: {
+    canonical: "https://madebynorthlight.com.ng/services",
+  },
   openGraph: {
     title: "Services | Northlight Creative Studios",
     description:
-      "Discover our services: frontend engineering, product design, and modern web development tailored to your needs.",
-    url: "https://www.madebynorthlight.com.ng/services",
+      "From concept to code — Northlight Creative Studios offers design, development, and digital craftsmanship that elevate brands and experiences.",
+    url: "https://madebynorthlight.com.ng/services",
+    siteName: "Northlight Creative Studios",
     images: [
       {
         url: "https://madebynorthlight.com.ng/assets/og-image-services.png",
@@ -18,13 +33,14 @@ export const metadata: Metadata = {
         alt: "Northlight Creative Studios - Services",
       },
     ],
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Services | Northlight Creative Studios",
     description:
-      "Discover our services at The Studio: frontend engineering, product design, and modern web development tailored to your needs.",
+      "Frontend engineering, product design, and branding — Northlight Creative Studios crafts modern, meaningful digital experiences.",
     images: ["https://madebynorthlight.com.ng/assets/og-image-services.png"],
   },
 };
