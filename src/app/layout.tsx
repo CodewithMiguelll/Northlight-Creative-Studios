@@ -58,12 +58,12 @@ const headersList = await headers();
 const path = headersList.get("x-pathname") || ""; // fallback for safety
 const canonical = `https://madebynorthlight.com.ng${path}`;
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
-    return (
+}>) {
+  return (
     <html lang="en">
       <head>
         <link rel="canonical" href={canonical} />
