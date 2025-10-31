@@ -38,6 +38,14 @@ const projects = [
     image: "/images/Irressentials.png",
     link: "https://irressentials.vercel.app",
   },
+
+  {
+    title: "Rise Of The Rejects Website",
+    description:
+      "Built with Next.js 15, TypeScript, and Framer Motion, this project extends my screenplay Rise of the Rejects beyond the page — into a cinematic, interactive world that fuses code, creativity, and conviction.",
+    image: "/images/rotr-portfolio-logo.png",
+    link: "https://riseoftherejects.vercel.app",
+  },
   {
     title: "Patricia Essentials Logo Suite",
     description:
