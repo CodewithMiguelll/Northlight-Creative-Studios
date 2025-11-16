@@ -9,6 +9,9 @@ import {
   TrendingUp,
   Globe,
   Check,
+  Stars,
+  ArrowBigLeft,
+  ArrowRight,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -185,18 +188,18 @@ export default function ServicesPage() {
               Special Offers
             </h3>
           </div>
-          <ul className="space-y-3 text-gray-700">
-            <li>✨ First 2 orders are FREE!</li>
+          <ul className="space-y-3 text-gray-700 list-disc pl-5">
+            <li> First 2 orders are FREE!</li>
             <li>
-              ✨ Free month of maintenance and support for websites after launch
+             Free month of maintenance and support for websites after launch
             </li>
-            <li>✨ Bundle deals: Copy Audits + Mini Brand Guides</li>
+            <li>Bundle deals: Copy Audits + Mini Brand Guides</li>
           </ul>
           <Link
             href="/contact"
-            className="mt-6 block text-center bg-[#7e57c2] text-white px-4 py-3 rounded-lg shadow hover:bg-purple-700 transition"
+            className="mt-6 flex gap-2 items-center justify-center text-center bg-[#7e57c2] text-white px-4 py-3 rounded-lg shadow hover:bg-purple-700 transition"
           >
-            Claim Offer 🚀
+            Claim Offer <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.aside>
       </div>
