@@ -10,23 +10,21 @@ export default function HeroSectionOne() {
     <div className="relative mx-auto my-10 flex max-w-7xl flex-col items-center justify-center">
       <div className="px-4 py-10 md:py-20">
         <h1 className="relative z-10 mx-auto max-w-4xl text-center text-2xl font-bold text-slate-700 md:text-4xl lg:text-7xl dark:text-slate-300">
-          {"Let's bring your next idea to life."
-            .split(" ")
-            .map((word, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
-                animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                transition={{
-                  duration: 0.3,
-                  delay: index * 0.1,
-                  ease: "easeInOut",
-                }}
-                className="mr-3 inline-block"
-              >
-                {word}
-              </motion.span>
-            ))}
+          {"One Studio. Every Creative Need.".split(" ").map((word, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, filter: "blur(4px)", y: 10 }}
+              animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+              transition={{
+                duration: 0.3,
+                delay: index * 0.1,
+                ease: "easeInOut",
+              }}
+              className="mr-3 inline-block"
+            >
+              {word}
+            </motion.span>
+          ))}
         </h1>
         <motion.p
           initial={{
@@ -41,9 +39,10 @@ export default function HeroSectionOne() {
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-md md:text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          At Northlight Creative Studios, we help entrereneurs, brands, and
-          creators find their voice, craft their vision, and shine like the
-          North Star that guides them.
+          Most brands juggle a designer, a writer, and a developer… and end up
+          with a scattered identity. Northlight Creative Studios brings
+          everything under one roof — design, development, and storytelling
+          working in harmony. One vision. One team. One seamless experience.
         </motion.p>
         <motion.div
           initial={{
