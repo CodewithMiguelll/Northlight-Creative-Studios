@@ -126,21 +126,13 @@ export default function Home() {
             <p
               className={`${prompt.className} text-base md:text-lg mb-5 leading-relaxed`}
             >
-              Northlight Creative Studios is a multidisciplinary agency built on
-              creativity, clarity, and craft. Founded by Chikaima Miguel Uwakwe,
-              we blend design and technology to create digital experiences that
-              shine — from sleek, responsive websites to thoughtful product
-              interfaces.
-            </p>
-            <p
-              className={`${prompt.className} text-base md:text-lg leading-relaxed`}
-            >
-              We believe great design is more than visuals — it’s strategy,
-              emotion, and storytelling in motion. Every project we take on is
-              guided by precision, purpose, and a bold confidence that
-              challenges the ordinary. At Northlight, our mission is simple: to
-              help brands and creators express their identity through design
-              that connects and endures.
+              Most brands juggle different creatives for design, copywriting,
+              and web development — and end up with an inconsistent brand
+              identity. Northlight Creative Studios fixes that. We’re a
+              full-service creative agency bringing brand design, UI/UX, web
+              development, and content strategy together under one unified
+              vision. No juggling. No mixed messages. Just clean, cohesive,
+              intentional work that makes your brand unforgettable online.
             </p>
 
             <div className="flex justify-center md:justify-start mt-8">
