@@ -40,6 +40,14 @@ const projects = [
   },
 
   {
+    title: "Flyte Airways",
+    description:
+      "A modern travel booking platform built with Next.js and Tailwind CSS. Users can search destinations, track active flights, manage bookings, and enjoy a smooth, mobile-first travel experience.",
+    image: "/images/flyte-logo.png",
+    link: "https://flyte-one.vercel.app",
+  },
+
+  {
     title: "Rise Of The Rejects Website",
     description:
       "Built with Next.js, TypeScript, and Framer Motion, this project extends my screenplay Rise of the Rejects beyond the page — into a cinematic, interactive world that fuses code, creativity, and conviction.",
