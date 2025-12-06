@@ -12,10 +12,12 @@ export const metadata: Metadata = {
     template: "%s | Northlight Creative Studios",
   },
   description:
-    "Official website for Northlight Creative Studios, a multidisciplinary freelancing agency focused on web, design, and content.",
+    "Official website for Northlight Creative Studios, a multidisciplinary creative agency focused on web, design, and content.",
   keywords: [
     "Northlight Creative Studios",
     "web design agency",
+    "creative",
+    "creativity",
     "frontend developer",
     "creative studio",
     "freelance web developer",
