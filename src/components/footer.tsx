@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { Github, Instagram, Info, FolderKanban, Briefcase, Linkedin } from "lucide-react";
+import { Github, Instagram, Info, FolderKanban, Briefcase, Linkedin, } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { Pacifico } from "next/font/google";
 
 
@@ -70,6 +72,14 @@ export const Footer = () => (
           className="flex items-center gap-2 hover:text-primary transition-colors"
         >
           <Instagram size={16} /> Instagram
+        </a>
+        <a
+          href="https://x.com/Chikaimaaa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 hover:text-primary transition-colors"
+        >
+          <FontAwesomeIcon icon={faXTwitter} width={16} height={16} /> X
         </a>
       </div>
     </div>
