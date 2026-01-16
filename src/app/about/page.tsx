@@ -2,13 +2,13 @@
 import { Quicksand, Prompt, Podkova } from "next/font/google";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
-import myImage from "/images/chikaima-uwakwe.jpg";
-import absoluteMM from "/images/20250331_DC_News_AbsoluteMM3.avif";
-import theMatrix from "/images/the-matrix-1999-poster.jpg";
-import nextIcon from "/images/nextjs.png";
-import cycling from "/images/luca-j-ptwR2dPj0po-unsplash.jpg";
-import musicBG from "/images/andrey-ilkevich-yXi7dfyPOyo-unsplash.jpg";
-import leonardoDavinci from "/images/Leonardo-Davinci.jpg";
+import myImage from "@/images/chikaima-uwakwe.jpg";
+import absoluteMM from "@/images/20250331_DC_News_AbsoluteMM3.avif";
+import theMatrix from "@/images/the-matrix-1999-poster.jpg";
+import nextIcon from "@/images/nextjs.png";
+import cycling from "@/images/luca-j-ptwR2dPj0po-unsplash.jpg";
+import musicBG from "@/images/andrey-ilkevich-yXi7dfyPOyo-unsplash.jpg";
+import leonardoDavinci from "@/images/Leonardo-Davinci.jpg";
 
 const quicksandBold = Quicksand({
   variable: "--font-quicksand-bold",
