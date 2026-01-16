@@ -66,7 +66,7 @@ export const Footer = () => (
           <Linkedin size={16} /> LinkedIn
         </a>
         <a
-          href="https://www.instagram.com/_big.migz/"
+          href="https://www.instagram.com/chikaimaaa_/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-primary transition-colors"
