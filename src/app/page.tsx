@@ -1,12 +1,9 @@
 "use client";
 import { Quicksand, Prompt, Podkova } from "next/font/google";
-import { FlipWords } from "@/components/ui/flip-words";
 import HeroSectionOne from "@/components/hero-section";
-import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   Code2,
-  Paintbrush,
   Palette,
   Compass,
   Mail,
@@ -17,17 +14,16 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "motion/react";
-import ListCard from "@/components/card";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
+import Freelancer_Img from "@/images/uk-black-tech-dfmsZyFVi_I-unsplash.jpg"
 
 {
   /*
   Made with love by Miguel Uwakwe ❤️ 
   If you're seeing this, it means you have access to the source code of my creative agency website.
-  Please do not use any part of this code without my permission. 
   If you like what you see, consider hiring me for your next project!
-  Reach me at: chikaimauwakwe@gmail.com
-  Or Instagram: @_big.migz
+  Reach me at: chikaclothing1960@gmail.com
+  Or X(formerly Twitter): @Chikaimaaa
   Jesus loves you and so do I!
 */
 }
@@ -41,7 +37,7 @@ const quicksandBold = Quicksand({
 });
 
 const quicksandSemiBold = Quicksand({
-  variable: "--font-quicksand-bold",
+  variable: "--font-quicksand-semi-bold",
   subsets: ["latin"],
   weight: "500",
 });
@@ -61,8 +57,6 @@ const prompt = Prompt({
   weight: "400",
 });
 
-const words = ["Idea", "Product", "Website", "Vision"];
-
 const testimonials = [
   {
     quote:
@@ -80,7 +74,7 @@ const testimonials = [
   },
   {
     quote:
-      "I’ve worked with Miguel on countless design projects, and he never disappoints. Most recently, he created the poster, pamphlet, invitation, and VIP access card for a family event, and the results were stunning. His eye for detail and creativity make him an invaluable designer to work with.",
+      "I've worked with Miguel on countless design projects, and he never disappoints. Most recently, he created the poster, pamphlet, invitation, and VIP access card for a family event, and the results were stunning. His eye for detail and creativity make him an invaluable designer to work with.",
     name: "Chika Uwakwe",
     designation: "Sole Proprietor at Irresistible Stores",
     src: "/images/chika-uwakwe.jpeg",
@@ -110,7 +104,7 @@ export default function Home() {
             className="w-full md:w-1/2 flex justify-center"
           >
             <img
-              src="/images/uk-black-tech-dfmsZyFVi_I-unsplash.jpg"
+              src={Freelancer_Img.src}
               alt="Freelancer working on a project."
               className="rounded-2xl shadow-xl object-cover w-[90%] md:w-[80%] max-w-[500px]"
             />
@@ -380,7 +374,7 @@ export default function Home() {
               href="/contact"
               className="transition-all duration-200 bg-[#7e57c2] hover:bg-purple-700 text-[#fffaf5] px-6 py-3 rounded-xl shadow-md"
             >
-              Go to Contact Page
+              Request A Demo.
             </Link>
           </motion.div>
         </div>
