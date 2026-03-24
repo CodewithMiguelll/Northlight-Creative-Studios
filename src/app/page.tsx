@@ -15,7 +15,11 @@ import {
 import Link from "next/link";
 import { motion } from "motion/react";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
-import Freelancer_Img from "@/images/uk-black-tech-dfmsZyFVi_I-unsplash.jpg"
+import Freelancer_Img from "@/images/uk-black-tech-dfmsZyFVi_I-unsplash.jpg";
+import EgideImg from "@/images/egide.jpg";
+import AaliyahImg from "@/images/Aaliyah-Junaid-CTO.jpg";
+import ChikaImg from "@/images/chika-uwakwe.jpeg";
+import ShalomImg from "@/images/shalom-pm-cropped.jpeg";
 
 {
   /*
@@ -63,28 +67,28 @@ const testimonials = [
       "During his six-month collaboration with our AI agency, Miguel consistently delivered high-quality graphics for our Instagram campaigns, colleague birthday posts, and onboarding banners. His designs were always on-brand, creative, and timely. We appreciated his reliability and fresh eye for detail.",
     name: "Enwono Edo",
     designation: "Chief Executive Officer at African AI Network",
-    src: "/images/egide.jpg",
+    src: EgideImg,
   },
   {
     quote:
       "I had the pleasure of collaborating with Miguel on a project, and I was blown away by his skills and work ethic. He's a true creative genius, and his passion for design and development shines through in every project he takes on. Plus, he's a joy to work with, always positive and communicative.",
     name: "Aaliyah Junaid",
     designation: "Fullstack/Blockchain Developer at Evento",
-    src: "/images/Aaliyah-Junaid-CTO.jpg",
+    src: AaliyahImg,
   },
   {
     quote:
       "I've worked with Miguel on countless design projects, and he never disappoints. Most recently, he created the poster, pamphlet, invitation, and VIP access card for a family event, and the results were stunning. His eye for detail and creativity make him an invaluable designer to work with.",
     name: "Chika Uwakwe",
     designation: "Sole Proprietor at Irresistible Stores",
-    src: "/images/chika-uwakwe.jpeg",
+    src: ChikaImg,
   },
   {
     quote:
       "I had the pleasure of working with Miguel at African AI Network, and I can confidently say he is an exceptional graphic designer. He is hardworking, highly creative, and consistently delivers high-quality designs that perfectly capture the message and vision of every project. His professionalism, attention to detail, and ability to meet deadlines make him a valuable asset to any team. I strongly recommend him to any employer or client looking for top-notch design work.",
     name: "Ihionkhan Shalom",
     designation: "Product/Project Manager at Mintyn",
-    src: "/images/shalom-pm-cropped.jpeg",
+    src: ShalomImg,
   },
 ];
 
